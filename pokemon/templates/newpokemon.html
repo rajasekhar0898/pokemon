@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Pokemon</title>
+    <link rel="stylesheet" href="static\css\new_poke.css">
+</head>
+<body>
+    <h1>New Pokemon</h1>
+
+    <form  method="post">
+        {{ form.csrf_token }}
+        {{ form.hidden_tag() }}
+        
+        <p>
+            {{  form.name.label  }}
+            {{  form.name   }} <br>
+            
+            {{  form.image_url.label  }}
+            {{  form.image_url   }} <br>
+            
+            {{  form.description.label  }}
+            {{  form.description   }} <br>
+            
+            {{  form.height.label  }}
+            {{  form.height   }}<br>
+            
+            {{  form.weight.label  }}
+            {{  form.weight   }}<br>
+            
+            {{  form.category.label  }}
+            {{  form.category   }}<br>
+            
+            {{  form.abilities.label  }}
+            {{  form.abilities   }}<br>
+
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+
+</body>
+</html>

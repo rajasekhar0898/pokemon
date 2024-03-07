@@ -1,0 +1,143 @@
+/* index.css */
+
+/* Styles for Pokémon container */
+header {
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000; /* Ensure header is above other content */
+    margin-left: -10px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Add padding to body to prevent content from being hidden behind the fixed header */
+body {
+    padding-top: 80px; /* Adjust as needed based on header height */
+    background-color: wheat;
+}
+ 
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-top: 20px; /* Add margin to the top */
+}
+
+.button-container button {
+    padding: 8px 16px; /* Adjust button padding */
+}
+
+/* Adjust search button style */
+/* Adjust search button style */
+.button-container form input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.button-container form button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff; /* Adjust background color */
+    color: white; /* Adjust text color */
+}
+
+
+ 
+.add-pokemon-button {
+    background-color: #4CAF50; /* Green background color */
+    padding: 8px 16px; /* Adjust padding if needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signup-button{
+    background-color: #4CAF50; /* Green background color */
+    padding: 8px 16px; /* Adjust padding if needed */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button {
+   
+    background-color: #4CAF50; /* Green background color */
+    padding: 8px 16px; /* Adjust padding if needed */
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+
+ 
+ 
+
+
+.y {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.u {
+    width: calc(30% - 20px); /* Set a calculated width to include margin */
+    padding: 5px; /* Decrease padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Decrease margin bottom */
+}
+
+.y > .u img {
+    width: 100px; /* Make the image width 100% of its container */
+    height: 100px; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Decrease margin bottom */
+}
+
+.y > .u h2 {
+    text-align: center;
+    margin-bottom: 5px; /* Decrease margin bottom */
+}
+
+.y > .u p {
+    margin-bottom: 3px; /* Decrease margin bottom */
+}
+
+/* Styles for Pokémon details */
+.u .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.u .details .m,
+.u .details .n {
+    flex-basis: 100%; /* Ensure elements with class m and n take full width */
+}
+
+.u .details .m p,
+.u .details .n p {
+    margin-bottom: 5px;
+}
+
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.actions button {
+    padding: 5px 10px;
+}
